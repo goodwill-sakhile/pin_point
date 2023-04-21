@@ -106,6 +106,7 @@ class UserProfilePicture(TouchBox):
             self.ids.ticker_space.md_bg_color = [255/float(255), 0, 0, 1]
         self.parent.root.parent.current_selected_profile = self
 class FriendsListLayout(MDGridLayout):
+    #a layout that list your friends 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.rows = 1
@@ -126,5 +127,4 @@ class FriendsListLayout(MDGridLayout):
                 user.ids.profile_image_object.ids.location_icon.text_color = [112/float(255), 128/float(255), 144/float(255), 1]
                 user.ids.profile_image_object.ids.location_icon.icon = "map-marker-remove-variant"
             self.add_widget(user)
-class FriendsListBox(MDBoxLayout):
-    pass
+class
