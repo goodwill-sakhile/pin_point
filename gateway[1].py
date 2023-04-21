@@ -287,6 +287,7 @@ class TouchBox(MDBoxLayout):
 class LoadingBox(MDBoxLayout):
     pass
 class RegisterButtonBox(TouchBox):
+    #responsive touch box that respond as a button and direct you to user register screen / sign_up_screen
     def respondToTouch(self):
         self.root.parent.transition = SlideTransition(direction = "left")
         self.root.parent.current = "sign_up_screen"
@@ -456,8 +457,4 @@ class GatewayScreen(MDScreen):
         super().__init__(**kwargs)
         self.share_rule = "friends"
 class App(MDApp):
-    def build(self):
-        root = GatewayScreen()
-        return root
-if __name__ == "__main__":
-    App().run()
+    def
