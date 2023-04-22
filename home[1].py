@@ -123,6 +123,7 @@ ui = Builder.load_string("""
                     on_release:root.goToSettingsScreen(self)
 """)
 class SettingsBox(MDBoxLayout):
+    #Settings box
     pass
 class LoadUpdateLocation(MDBoxLayout):
     pass
@@ -133,6 +134,7 @@ class LocationShareButton(TouchBox):
         self.response = -1
         self.location = [-26.3714, 28.3754]
     def openDialog(self, title, message, button):
+        #when called it opens up a dialog box
         self.dialog = MDDialog(title = title, text = message, buttons = [button])
         self.dialog.open()
     def close(self, button):
