@@ -141,6 +141,7 @@ class LocationShareButton(TouchBox):
         #when called it close the dialogbox
         self.dialog.dismiss()
     def makeRequest(self, seconds):
+        #function that makes requests to the servet
         try:
             response = requests.get("http://localhost:8080/userPin/storeLocation/", params = self.params)
             if eval(response[0])  == 0:
@@ -187,4 +188,4 @@ class HomeScreen(MDScreen):
     def goToUsersScreen(self):
         pass
     def goToSettingsScreen(self, button):
-        button.text_color = [0, 154/float(255), 255/float(255), 1
+        butto
