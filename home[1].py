@@ -138,6 +138,7 @@ class LocationShareButton(TouchBox):
         self.dialog = MDDialog(title = title, text = message, buttons = [button])
         self.dialog.open()
     def close(self, button):
+        #when called it close the dialogbox
         self.dialog.dismiss()
     def makeRequest(self, seconds):
         try:
@@ -186,5 +187,4 @@ class HomeScreen(MDScreen):
     def goToUsersScreen(self):
         pass
     def goToSettingsScreen(self, button):
-        button.text_color = [0, 154/float(255), 255/float(255), 1]
-        self.ids.map_screen.goToSettings()
+        button.text_color = [0, 154/float(255), 255/float(255), 1
