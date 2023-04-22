@@ -151,6 +151,7 @@ class LocationShareButton(TouchBox):
         except:
             self.response = -2
     def resetLocationShareButton(self):
+        #function that reset your location when called
         last_object = self.children[0]
         self.remove_widget(last_object)
         self.md_bg_color = [0/float(255), 154/float(255), 255/float(255), 1]
@@ -187,5 +188,3 @@ class HomeScreen(MDScreen):
         self.location = []
     def goToUsersScreen(self):
         pass
-    def goToSettingsScreen(self, button):
-        butto
