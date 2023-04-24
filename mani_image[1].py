@@ -1,10 +1,12 @@
 from PIL import Image
 def resizeImage(size, image_file):
+    #manipulate image by resizing
     image = Image.open(image_file)
     resized_image = image.resize((size, size))
     print(str(size) + "_" +image_file)
     resized_image.save(str(size) + "_" +image_file)
 def makeImageTransparent(image_file):
+    #change the image file to transparent
     image = Image.open(image_file)
     rgba = image.convert("RGBA")
     datas = rgba.getdata()
